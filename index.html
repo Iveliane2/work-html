@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet HTml</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">accueil</a>
+            </li>
+            <li>
+                <a href="#">à propos</a>
+            </li>
+            <li>
+                <a href="#">Travail</a>
+            </li>
+            <li>
+                <a href="#">CV</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <div class="well-timed">
+            <h1>A propos de nous</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9vcXvKskc6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section>
+        <div class="work">
+        <h1>Travail</h1>
+        <img src="https://les-seminaires.eu/wp-content/uploads/2019/04/organisation-evenement-entreprise-735x400.png" alt="organisation-evenement-entreprise-735x400">
+        </div>
+    </section>
+
+    <section>
+        <div class="CV">
+            <h1>CV</h1>
+            <p>Exemple CV</p>
+            <img src="https://modele-cv.org/wp-content/uploads/doc-builder/cv/miniatures/cv-6-pink.jpg" alt="cv-6-pink">
+        </div>
+    </section>
+
+
+    <section>
+        <div class="contact">
+            <h1>Contactez-nous</h1>
+            <p>Un problème, une question, envie de nous envoyer un message d'amour? 
+                N'hésitez pas à utiliser ce formulaire pour prendre contact avec nous!
+            </p>
+            <form action="/page-traitement-données" method="post">
+                <div>
+                    <label for="nom">Votre nom </label>
+                    <input type="text" id="nom" name="nom" placeholder="Iveliane" required>
+                </div><br>
+                <div>
+                    <label for="email">Votre e-mail</label>
+                    <input type="email" id="nom" name="nom" placeholder="ivelianeyala@gmail.com"required>
+                </div><br>
+                <div>
+                    <label for="sujet">Quel est le sujet de votre message?</label>
+                    <select name="sujet" id="sujet"required>
+                        <option value="disabled selected hidden">Choisissez le sujet de votre message</option>
+                        <option value="probleme-compte">Problème avec mon compte</option>
+                        <option value="question-produit">Question-produit</option>
+                        <option value="suivi-commande">Suivi de ma commande</option>
+                        <option value="autre">Autre...</Autre></option>
+                    </select>
+                </div><br>
+                <div>
+                    <label for="message">Votre message</label>
+                    <textarea name="message" id="message" placeholder="Bonjour, je vous contacte car..."></textarea>
+                </div><br>
+                <div>
+                    <button type="submit">Envoyez votre message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <br><br>
+    <footer>
+        <div class="footer">
+            <p>Tous droits réservés <a href="">HOME EVENTS</a> &copy; 2023 </p>
+        </div>
+    </footer>
+</body>
+</html>
